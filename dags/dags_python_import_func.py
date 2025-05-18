@@ -2,7 +2,7 @@ from __future__ import annotations
 import datetime
 import pendulum
 from airflow.models.dag import DAG
-from airflow.operators.Python import PythonOperator
+from airflow.operators.python import PythonOperator
 from common.common_func import get_sftp
 
 with DAG(
