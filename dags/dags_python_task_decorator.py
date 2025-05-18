@@ -3,7 +3,7 @@ import datetime
 import pendulum
 from airflow.models.dag import DAG
 from airflow.operators.python import PythonOperator
-form ariflow.decorators import task
+from ariflow.decorators import task
 import random
 
 with DAG(
