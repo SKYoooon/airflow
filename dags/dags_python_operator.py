@@ -1,13 +1,10 @@
 from __future__ import annotations
-
 import datetime
-
 import pendulum
-
 from airflow.models.dag import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.empty import EmptyOperator
-from airflow.operators.empty import PythonOperator
+from airflow.operators.python import PythonOperator
 import random
 
 with DAG(
