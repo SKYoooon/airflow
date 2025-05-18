@@ -2,8 +2,6 @@ from __future__ import annotations
 import datetime
 import pendulum
 from airflow.models.dag import DAG
-from airflow.operators.bash import BashOperator
-from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 import random
 
@@ -21,7 +19,7 @@ with DAG(
 
     py_t1 = PythonOperator(
         task_id = 'py_t1',
-        python_callabel = select_fruit
+        python_callabe = select_fruit
     )
 
     py_t1
